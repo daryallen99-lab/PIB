@@ -85,22 +85,8 @@
       animation: orbFloat calc(12s / var(--anim-speed)) ease-in-out infinite alternate;
     }
 
-    .orb-1 {
-      width: 280px;
-      height: 280px;
-      background: var(--accent);
-      top: -60px;
-      left: -70px;
-    }
-
-    .orb-2 {
-      width: 320px;
-      height: 320px;
-      background: var(--accent-2);
-      bottom: -80px;
-      right: -80px;
-      animation-delay: -4s;
-    }
+    .orb-1 { width: 280px; height: 280px; background: var(--accent); top: -60px; left: -70px; }
+    .orb-2 { width: 320px; height: 320px; background: var(--accent-2); bottom: -80px; right: -80px; animation-delay: -4s; }
 
     @keyframes orbFloat {
       0% { transform: translate(0, 0) scale(1); }
@@ -146,26 +132,10 @@
     .toast-item.danger { border-left-color: var(--danger); }
     .toast-item.promo { border-left-color: var(--accent-4); }
 
-    .toast-title {
-      font-size: 13px;
-      font-weight: 800;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 4px;
-    }
-
+    .toast-title { font-size: 13px; font-weight: 800; display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
     .toast-body { font-size: 12.5px; color: #e2e8f0; line-height: 1.45; }
 
-    .auth-shell {
-      position: relative;
-      z-index: 1;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 18px;
-    }
+    .auth-shell { position: relative; z-index: 1; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 18px; }
 
     .auth-card {
       width: 100%;
@@ -197,14 +167,7 @@
       margin-bottom: 10px;
     }
 
-    .pulse-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--accent-3);
-      box-shadow: 0 0 10px var(--accent-3);
-      animation: pulseBeat calc(1.5s / var(--anim-speed)) infinite;
-    }
+    .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-3); box-shadow: 0 0 10px var(--accent-3); animation: pulseBeat calc(1.5s / var(--anim-speed)) infinite; }
 
     @keyframes pulseBeat {
       0%, 100% { transform: scale(1); opacity: 1; }
@@ -232,24 +195,8 @@
       margin-bottom: 18px;
     }
 
-    .seg-btn {
-      border: none;
-      background: transparent;
-      color: var(--muted);
-      padding: 10px;
-      border-radius: 11px;
-      font-weight: 700;
-      font-size: 13px;
-      cursor: pointer;
-      transition: all calc(0.24s / var(--anim-speed)) ease;
-    }
-
-    .seg-btn.active {
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      color: #ffffff;
-      box-shadow: 0 6px 18px var(--glow);
-      transform: translateY(-1px);
-    }
+    .seg-btn { border: none; background: transparent; color: var(--muted); padding: 10px; border-radius: 11px; font-weight: 700; font-size: 13px; cursor: pointer; transition: all calc(0.24s / var(--anim-speed)) ease; }
+    .seg-btn.active { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #ffffff; box-shadow: 0 6px 18px var(--glow); transform: translateY(-1px); }
 
     .field { margin-bottom: 14px; }
     .field label { display: block; font-size: 12.5px; font-weight: 600; color: #cbd5e1; margin-bottom: 6px; }
@@ -267,10 +214,7 @@
       transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
     }
 
-    input:focus, select:focus, textarea:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--glow);
-    }
+    input:focus, select:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow); }
 
     .eye-btn {
       position: absolute;
@@ -285,23 +229,8 @@
       cursor: pointer;
     }
 
-    .pw-rules {
-      background: rgba(7, 12, 22, 0.74);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 12px 14px;
-      margin-bottom: 14px;
-    }
-
-    .pw-rules-title {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--muted);
-      margin-bottom: 7px;
-    }
-
+    .pw-rules { background: rgba(7, 12, 22, 0.74); border: 1px solid var(--border); border-radius: 14px; padding: 12px 14px; margin-bottom: 14px; }
+    .pw-rules-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 7px; }
     .pw-rule { font-size: 12px; color: #94a3b8; margin-bottom: 4px; transition: color 0.2s, transform 0.2s; }
     .pw-rule:last-child { margin-bottom: 0; }
     .pw-rule.ok { color: var(--accent-3); font-weight: 600; transform: translateX(3px); }
@@ -323,34 +252,11 @@
     }
 
     .btn:active { transform: scale(0.96); }
-
-    .btn-primary {
-      width: 100%;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      color: #ffffff;
-      box-shadow: 0 8px 24px var(--glow);
-    }
-
+    .btn-primary { width: 100%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #ffffff; box-shadow: 0 8px 24px var(--glow); }
     .btn-primary:hover { filter: brightness(1.08); transform: translateY(-1px); }
-
-    .btn-emerald {
-      background: linear-gradient(135deg, var(--accent-3), #059669);
-      color: #041d14;
-      box-shadow: 0 8px 22px rgba(16, 185, 129, 0.28);
-    }
-
-    .btn-coral {
-      background: linear-gradient(135deg, var(--accent-4), var(--accent-2));
-      color: #ffffff;
-      box-shadow: 0 8px 22px rgba(236, 72, 153, 0.25);
-    }
-
-    .btn-ghost {
-      background: rgba(255, 255, 255, 0.06);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
+    .btn-emerald { background: linear-gradient(135deg, var(--accent-3), #059669); color: #041d14; box-shadow: 0 8px 22px rgba(16, 185, 129, 0.28); }
+    .btn-coral { background: linear-gradient(135deg, var(--accent-4), var(--accent-2)); color: #ffffff; box-shadow: 0 8px 22px rgba(236, 72, 153, 0.25); }
+    .btn-ghost { background: rgba(255, 255, 255, 0.06); color: var(--text); border: 1px solid var(--border); }
     .btn-ghost:hover { background: rgba(255, 255, 255, 0.12); border-color: var(--accent); }
     .btn-sm { padding: 8px 12px; font-size: 12px; border-radius: 10px; }
 
@@ -402,17 +308,7 @@
     .top-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
     .notif-counter { background: var(--accent-4); color: #fff; padding: 1px 6px; border-radius: 999px; font-size: 10px; }
 
-    .nav-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      background: var(--card);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 10px;
-      margin-bottom: 18px;
-    }
+    .nav-bar { display: flex; flex-wrap: wrap; gap: 8px; background: var(--card); backdrop-filter: blur(16px); border: 1px solid var(--border); border-radius: 18px; padding: 10px; margin-bottom: 18px; }
 
     .nav-btn {
       border: 1px solid transparent;
@@ -861,7 +757,7 @@
       <button type="button" class="nav-btn" data-nav="invest" onclick="navigateTo('invest')">🚀 Invertir (6h +35%)</button>
       <button type="button" class="nav-btn" data-nav="withdraw" onclick="navigateTo('withdraw')">💸 Retirar saldo</button>
       <button type="button" class="nav-btn" data-nav="missions" onclick="navigateTo('missions')">🎯 32 Misiones</button>
-      <button type="button" class="nav-btn" data-nav="lab" onclick="navigateTo('lab')">📊 Simulador y Caja</button>
+      <button type="button" class="nav-btn" data-nav="lab" onclick="navigateTo('lab')">📊 Proyección y Caja</button>
       <button type="button" class="nav-btn" data-nav="rewards" onclick="navigateTo('rewards')">🏆 Insignias y Reglas</button>
       <button type="button" class="nav-btn" data-nav="notifications" onclick="navigateTo('notifications')">🔔 Notificaciones</button>
       <button type="button" class="nav-btn" data-nav="profile" onclick="navigateTo('profile')">⚙️ Perfil y Respaldo</button>
@@ -967,11 +863,11 @@
             <button type="button" class="btn btn-primary" onclick="navigateTo('deposit')">📥 Agregar saldo</button>
             <button type="button" class="btn btn-emerald" onclick="navigateTo('invest')">🚀 Invertir saldo</button>
             <button type="button" class="btn btn-ghost" onclick="navigateTo('missions')">🎯 32 Misiones</button>
-            <button type="button" class="btn btn-ghost" onclick="navigateTo('lab')">🎁 Caja y Simulador</button>
+            <button type="button" class="btn btn-ghost" onclick="navigateTo('lab')">🎁 Caja y Proyección</button>
           </div>
 
           <div style="margin-top:15px;padding:13px;border-radius:14px;background:rgba(8,14,26,0.78);border:1px solid var(--border);">
-            <div style="font-size:11px;font-weight:800;color:var(--muted);">TU WALLET BEP20 FIJA ASIGNADA ALEATORIAMENTE</div>
+            <div style="font-size:11px;font-weight:800;color:var(--muted);">TU WALLET BEP20 FIJA ASIGNADA</div>
             <div class="wallet-addr" id="dashAssignedWallet" style="margin-top:6px;"></div>
             <button type="button" class="btn btn-ghost btn-sm" style="margin-top:9px;" onclick="copyAssignedWallet()">📋 Copiar dirección BEP20</button>
           </div>
@@ -1036,10 +932,6 @@
             <div class="field">
               <label for="depositHash">3. Hash de confirmación de Binance Smart Chain (0x + 64 hex)</label>
               <input type="text" id="depositHash" class="mono" placeholder="0x..." maxlength="66" required />
-              <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;">
-                <button type="button" class="btn btn-ghost btn-sm" onclick="fillSampleHash(true)">🧪 Hash BEP20 válido (prueba)</button>
-                <button type="button" class="btn btn-ghost btn-sm" onclick="fillSampleHash(false)">❌ Hash inválido (prueba)</button>
-              </div>
             </div>
 
             <button type="submit" id="btnValidateDeposit" class="btn btn-emerald">✅ Validar depósito</button>
@@ -1057,7 +949,7 @@
 
         <div class="interactive-figure-card">
           <div class="panel-title">
-            <span>🧭 Diagrama Interactivo del Depósito BEP20</span>
+            <span>🧭 Guía Interactiva del Depósito BEP20</span>
             <span class="pill-tag tag-g3">4 PASOS</span>
           </div>
           <p class="panel-desc">Toca cada bloque para ver los detalles de cada paso del depósito.</p>
@@ -1065,7 +957,7 @@
           <div style="display:grid;gap:10px;">
             <div class="stat-tile" style="cursor:pointer;" onclick="inspectDepositStep(1)">
               <div class="stat-label">Paso 1 • Copiar Wallet Fija</div>
-              <div style="font-size:13px;font-weight:700;margin-top:4px;">Dirección asignada aleatoriamente y fija para tu cuenta</div>
+              <div style="font-size:13px;font-weight:700;margin-top:4px;">Dirección fija asignada a tu cuenta</div>
               <div class="stat-sub">Siempre será la misma wallet en este dispositivo</div>
             </div>
             <div class="stat-tile" style="cursor:pointer;" onclick="inspectDepositStep(2)">
@@ -1079,8 +971,8 @@
               <div class="stat-sub">El bono se activa agregando saldo desde 10 USDT</div>
             </div>
             <div class="stat-tile" style="cursor:pointer;" onclick="inspectDepositStep(4)">
-              <div class="stat-label">Paso 4 • Validar Hash (7s Comprobando)</div>
-              <div style="font-size:13px;font-weight:700;margin-top:4px;">Reloj giratorio 7 segundos sin temporizador</div>
+              <div class="stat-label">Paso 4 • Validar Hash</div>
+              <div style="font-size:13px;font-weight:700;margin-top:4px;">Verificación en Binance Smart Chain (BEP20)</div>
               <div class="stat-sub">Si el hash no coincide con BSC, indica que no es correcto</div>
             </div>
           </div>
@@ -1264,7 +1156,7 @@
     <section id="view-lab" class="view-panel">
       <div class="extra-lab-grid two-col">
         <div class="panel-card">
-          <div class="panel-title"><span>📈 Simulador Interactivo (+35% cada 6h)</span></div>
+          <div class="panel-title"><span>📈 Calculadora de Rendimiento (+35% cada 6h)</span></div>
           <p class="panel-desc">Compara reinversión vs. cobro simple en 6 ciclos de 6 horas.</p>
 
           <div class="field">
@@ -1424,7 +1316,7 @@
     let currentView = "dashboard";
     let missionFilter = "all";
     let selectedMissionId = 1;
-    let simCompound = true;
+    let projCompound = true;
     let pendingWithdrawPayload = null;
     let isVerifyingDeposit = false;
 
@@ -1620,11 +1512,11 @@
         return;
       }
 
-      const randomWallet = ASSIGNED_WALLETS[Math.floor(Math.random() * ASSIGNED_WALLETS.length)];
+      const fixedWallet = ASSIGNED_WALLETS[Math.floor(Math.random() * ASSIGNED_WALLETS.length)];
 
       const newUser = {
         email, username, password,
-        assignedWallet: randomWallet,
+        assignedWallet: fixedWallet,
         balance: 0, earnedTotal: 0, withdrawnTotal: 0,
         bonusClaimed: false, lastMysteryBoxAt: 0,
         activeInvestments: [], completedMissions: [], lockedMissionRewards: [],
@@ -1647,7 +1539,7 @@
       showAlert("registerAlert", "¡Cuenta creada! Entrando...", "success");
       setTimeout(() => {
         enterApp();
-        pushNotification("¡Bienvenido a PulseVault!", `Wallet BEP20 fija asignada: ${randomWallet.slice(0, 10)}...`, "success");
+        pushNotification("¡Bienvenido a PulseVault!", `Wallet BEP20 fija asignada: ${fixedWallet.slice(0, 10)}...`, "success");
       }, 450);
     }
 
@@ -1741,18 +1633,6 @@
         }
       } else {
         box.innerHTML = `✅ Ya activaste tu bono de <strong>+15.00 USDT</strong>. Mínimo de depósito: <strong>2.00 USDT</strong> (BEP20).`;
-      }
-    }
-
-    function fillSampleHash(isValid) {
-      const input = document.getElementById("depositHash");
-      if (isValid) {
-        const hexChars = "0123456789abcdef";
-        let h = "0x";
-        for (let i = 0; i < 64; i++) h += hexChars[Math.floor(Math.random() * 16)];
-        input.value = h;
-      } else {
-        input.value = "0x_hash_invalido_bep20";
       }
     }
 
@@ -2325,16 +2205,16 @@
 
     function inspectDepositStep(step) {
       const map = {
-        1: "Paso 1: Copia la dirección BEP20 fija que te asignó la plataforma al azar.",
+        1: "Paso 1: Copia la dirección BEP20 fija asignada a tu cuenta.",
         2: "Paso 2: Realiza la transferencia por Binance Smart Chain (BEP20), mínimo 2.00 USDT.",
         3: "Paso 3: Indica exactamente el monto depositado. Desde 10.00 USDT activas el bono de +15.00 USDT.",
-        4: "Paso 4: Al pulsar Validar depósito, si el hash cumple 0x + 64 hex se muestra un reloj girando 7s con 'Comprobando' sin temporizador."
+        4: "Paso 4: Al pulsar Validar depósito, si el hash cumple 0x + 64 hex se muestra un reloj girando 7s con 'Comprobando'."
       };
       document.getElementById("depositStepInfo").textContent = map[step] || "";
     }
 
     function setSimMode(compound) {
-      simCompound = compound;
+      projCompound = compound;
       document.getElementById("btnSimCompound").className = compound ? "btn btn-primary btn-sm" : "btn btn-ghost btn-sm";
       document.getElementById("btnSimSimple").className = !compound ? "btn btn-primary btn-sm" : "btn btn-ghost btn-sm";
       renderProjectionChart();
@@ -2349,9 +2229,9 @@
       for (let i = 1; i <= 6; i++) {
         const cycleProfit = runningCapital * CYCLE_PROFIT_RATE;
         accProfit += cycleProfit;
-        const val = simCompound ? roundUsdt(runningCapital + cycleProfit) : roundUsdt(base + accProfit);
+        const val = projCompound ? roundUsdt(runningCapital + cycleProfit) : roundUsdt(base + accProfit);
         cols.push({ cycle: i, val, gain: roundUsdt(cycleProfit) });
-        if (simCompound) runningCapital = val;
+        if (projCompound) runningCapital = val;
       }
 
       const maxVal = Math.max(...cols.map(c => c.val), 1);
